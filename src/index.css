@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.login-main{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 148, 135);
+    
+}
+.inner-login{
+   background-color: rgb(7, 131, 131);
+   padding: 20px;
+   border-radius: 9px;
+   display: flex;
+   flex-direction: column;
+   width: 330px;
+   gap: 20px;
+   box-shadow: 0 2px 4px 10px rgb(135, 123, 123);
+   animation: Slidedown 1s ease forwards ;
+   transform: translateY(-200px);
+   
+}
+.inner-login h1{
+    color: white;
+    text-align: center;
+}
+.inner-login input{
+    width: 220px;
+    margin: auto;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 9px;
+}
+.btn{
+    background-color: rgb(47, 34, 11);
+    width: 130px;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 15px;
+    color: white;
+    font-family: 600;
+    font-size: 17px;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+.btn2{
+    background-color: red;
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+
+@keyframes Slidedown{
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.main-dashboard{
+    height: 100vh;
+}
+.inner-dashboard{
+    display: flex;
+    gap: 20px;
+}
+.inner-dashboard1{
+    padding: 20px;
+    background-color: rgb(12, 12, 72);
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    width: 17%;
+    border-radius: 5px;
+}
+
+.inner-dashboard1 p{
+    margin-top: 20px;
+}
+.inner-dashboard1 h1{
+    font-size: 26px;
+}
+
+.inner-dashboard2{
+    background-color: white;
+    width : 83%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 40px;
+}
